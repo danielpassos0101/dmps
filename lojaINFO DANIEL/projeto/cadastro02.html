@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Formularios 2</title>
+    <meta charset="utf-8">
+
+<style>
+
+
+body{
+  font-family: sans-serif;
+  transform: scale(1);
+  transform-origin: 0 0;
+  height: 130px
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+
+.label-float input{
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius:0;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #3951b2;
+}
+
+
+
+
+.pad {
+
+position: relative;
+border: 2px #000000 solid;
+border-radius: 15px;
+
+}
+
+fieldset {
+
+border: 2px rgb(0, 0, 0) solid;
+border-radius: 10px;
+width: 70%;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+  <br><br><br><br><br><br><br><br>
+
+  <center>
+
+  <form>
+      <fieldset >
+        <legend>Dados Pessoais</legend>
+        <table align="left" width="100%" heigth="300px" border="0">
+            <tr>    <td width="20%">  <img src="../imagens/pessoa.png" align="center" width="200" height="150px"></img>
+                    </td>
+    
+                    <td class="label-float" width="40%">
+                      <div class="label-float">
+                        <input type="text" placeholder=" " size="50" />
+                        <label>Nome</label>
+                      </div>
+                    <br> 
+    
+                    <div class="label-float">
+                      <input type="text" placeholder=" " size="50" />
+                      <label>Telefone</label>
+                    </div>
+                    <br> 
+
+                    <div class="label-float">
+                      <input type="text" placeholder=" " size="50" />
+                      <label>Sexo</label>
+                    </div>
+                    <br> <br>
+    
+                      Formação: <select name="Formação">
+                        <option value="1° Ano do Ensino Fundamental"> 1° Ano do Ensino Fundamental </option>
+                        <option value="2° Ano do Ensino Fundamental"> 2° Ano do Ensino Fundamental </option>
+                        <option value="3° Ano do Ensino Fundamental"> 3° Ano do Ensino Fundamental </option>
+                        <option value="4° Ano do Ensino Fundamental"> 4° Ano do Ensino Fundamental </option>
+                        <option value="5° Ano do Ensino Fundamental"> 5° Ano do Ensino Fundamental </option>
+                        <option value="6° Ano do Ensino Fundamental"> 6° Ano do Ensino Fundamental </option>
+                        <option value="7° Ano do Ensino Fundamental"> 7° Ano do Ensino Fundamental </option>
+                        <option value="8° Ano do Ensino Fundamental"> 8° Ano do Ensino Fundamental </option>
+                        <option value="9° Ano do Ensino Fundamental"> 9° Ano do Ensino Fundamental </option>
+                        <option value="1° Ano do Ensino Médio"> 1° Ano do Ensino Médio </option>
+                        <option value="2° Ano do Ensino Médio"> 2° Ano do Ensino Médio </option>
+                        <option value="3° Ano do Ensino Médio"> 3° Ano do Ensino Médio </option>
+                        <option value="Ensino Médio Completo" selected="selected">  Ensino Médio Completo </option>
+                        </select> <br> <br>
+                    
+                        <div class="label-float">
+                          <input type="text" placeholder=" " size="50" />
+                          <label>CPF</label>
+                        </div>
+                        <br>
+                      </td>
+    
+                     <td width="39%"> Profissão: <select name="Profissao">
+                        <option value="Afiliado de lojas virtuais"> Afiliado de lojas virtuais </option>
+                        <option value="Blogger"> Blogger. </option>
+                        <option value="Vendedor de marketplace"> Vendedor de marketplace </option>
+                        <option value="Influenciador digital"> Influenciador digital </option>
+                        <option value="Analista de redes sociais"> Analista de redes sociais </option>
+                        <option value="Desenvolvedor mobile"> Desenvolvedor mobile </option>
+                        <option value="Autor de e-Books"> Autor de e-Books </option>
+                        <option value="Consultor"> Consultor </option>
+                        <option value="Designer gráfico"> Designer gráfico </option>
+                        <option value="Professor de idiomas"> Professor de idiomas </option>
+                        <option value="Fotógrafo digital"> Fotógrafo digital </option>
+                        <option value="Desenvolvedor de Software"> Desenvolvedor de Software </option>
+                        <option value="Engenheiro de Dados"> Engenheiro de Dados </option>
+                        <option value="Especialista em Inteligência Artificial"> Especialista em Inteligência Artificial </option>
+                        <option value="Cientista de Dados"> Cientista de Dados </option>
+                        <option value="Analista de Segurança Cibernética"> Analista de Segurança Cibernética </option>
+                        <option value="Analista de Marketing Digital"> Analista de Marketing Digital </option>
+                        <option value="Gerente de Marketing Digital"> Gerente de Marketing Digital </option>
+                        <option value="Especialista em SEO"> Especialista em SEO </option>
+                        <option value="Especialista em Automação de Marketing"> Especialista em Automação de Marketing </option>
+                        <option value="Especialista em Experiência do Usuário"> Especialista em Experiência do Usuário </option>
+                        <option value="Especialista em Automação Industrial"> Especialista em Automação Industrial </option>
+                        <option value="Especialista em Cloud Computing"> Especialista em Cloud Computing </option>
+                        <option value="Especialista em E-commerce"> Especialista em E-commerce </option>
+                        <option value="Especialista em Mobile Marketing"> Especialista em Mobile Marketing </option>
+                        <option value="Especialista em CRM"> Especialista em CRM </option>
+                        <option value="Especialista em Chatbots"> Especialista em Chatbots </option>
+                        <option value="Especialista em Redes Sociais"> Especialista em Redes Sociais </option>
+                        <option value="Especialista em Gestão de Projetos Digitais"> Especialista em Gestão de Projetos Digitais </option>
+                        <option value="Especialista em Business Intelligence"> Especialista em Business Intelligence </option>
+                        <option value="Especialista em Marketing de Conteúdo"> Especialista em Marketing de Conteúdo </option>
+    
+                        <option value="Nenhum" selected="selected"> Nenhuma Profissão </option>
+                        </select> <br> 
+                    </td>
+            </tr>
+                        
+        </table>
+    </fieldset>    
+    
+    
+    <br> <br> <br> <br>
+    
+    <fieldset>
+        <legend>Contato</legend>
+        <table align="left" width="100%" heigth="300px" border="0">
+            <tr>    <td width="20%">  <img src="../imagens/contato.png" align="center" width="200" height="200px"></img>
+                    </td>
+    
+    
+                <td class="label-float" width="79%">
+                  
+                  <div class="label-float">
+                    <input type="text" placeholder=" " size="60" />
+                    <label>Email</label>
+                  </div>
+                  <br> 
+    
+                  <div class="label-float">
+                    <input type="text" placeholder=" " size="60" />
+                    <label>Telefone</label>
+                  </div>
+                  <br> 
+    
+                  <div class="label-float">
+                    <input type="text" placeholder=" " size="60" />
+                    <label>Celular</label>
+                  </div>
+                  <br>
+    
+                  <div class="label-float">
+                    <input type="text" placeholder=" " size="60" />
+                    <label>Skype</label>
+                  </div>
+                  <br> 
+                </td> 
+
+            </tr>
+        </table>
+    </fieldset>    
+    
+    
+    <br> <br> <br> <br> 
+    
+    <fieldset>
+        <legend>Endereço</legend>
+        <table align="left" width="100%" heigth="300px" border="0">
+            <tr>    <td width="20%">  <img src="../imagens/endereco.png" align="center" width="200" height="200px"></img>
+                    </td>
+    
+                    <td class="label-float" width="40%">
+
+                      <div class="label-float">
+                        <input type="text" placeholder=" " size="30" />
+                        <label>Logradouro</label>
+                      </div>
+                    <br>
+
+                    <div class="label-float">
+                      <input type="text" placeholder=" " size="30" />
+                      <label>Cep</label>
+                    </div>
+                    <br> 
+                    
+                    <div class="label-float">
+                      <input type="text" placeholder=" " size="30" />
+                      <label>Bairro</label>
+                    </div>
+                    <br> 
+                    
+                        <div class="label-float">
+                          <input type="text" placeholder=" " size="30" />
+                          <label>Complemento</label>
+                        </div>
+                        <br>    
+                    
+                    </td>
+    
+                     <td width="39%">  
+
+                      <select name="alimento">
+                        <option value="AC"> AC </option>
+                        <option value="AL"> AL </option>
+                        <option value="AP"> AP </option>
+                        <option value="AM"> AM </option>
+                        <option value="BA"> BA </option>
+                        <option value="CE"> CE </option>
+                        <option value="DF"> DF </option>
+                        <option value="ES"> ES </option>
+                        <option value="GO"> GO </option>
+                        <option value="MA"> MA </option>
+                        <option value="MT"> MT </option>
+                        <option value="MS"> MS </option>
+                        <option value="MG"> MG </option>
+                        <option value="PA"> PA </option>
+                        <option value="PB"> PB </option>
+                        <option value="PR"> PR </option>
+                        <option value="PE"> PE </option>
+                        <option value="PI"> PI </option>
+                        <option value="RJ"> RJ </option>
+                        <option value="RN"> RN </option>
+                        <option value="RS"> RS </option>
+                        <option value="RO"> RO </option>
+                        <option value="RR"> RR </option>
+                        <option value="SC"> SC </option>
+                        <option value="SP"> SP </option>
+                        <option value="SE"> SE </option>
+                        <option value="TO"> TO </option>
+                        <option value="UF" selected="selected"> UF </option>
+                        </select> <br> <br>
+
+                        <div class="label-float">
+                          <input type="text" placeholder=" " size="30" />
+                          <label>Numero</label>
+                        </div>
+                      
+                     
+                    </td>
+            </tr>
+                        
+        </table>
+    </fieldset>
+    <br>
+    <table align="center" width="60%" heigth="150px" border="0">
+        <td> <input type="submit" name="Salvar Clientes" value="Salvar Clientes"> 
+        <input type="reset" name="Limpar Dados" value="Limpar Dados">
+        </td>
+    </table>
+    <br> <br> <br> <br> <br> <br> 
+    </center>
+  </form>>
+</body>
+</html>

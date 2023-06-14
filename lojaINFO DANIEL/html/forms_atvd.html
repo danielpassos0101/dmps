@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Formularios</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="menu2.css" />
+<style>
+
+.pad {
+
+    position: relative;
+    border: 2px #000000 solid;
+  border-radius: 15px;
+
+}
+
+fieldset {
+
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    width: 70%;
+}
+
+ 
+
+</style>
+</head>
+
+<body>
+
+    
+    <div>
+        <ul class="menu">
+               <li><a href="menu2.html">Home          </a></li>
+               <li><a href="hardware.html">Hardware      </a></li>
+               <li><a href="#">Software Microsoft</a>
+                         <ul>
+                                <li><a href="win11.html">Windows 11</a></li>
+                                <li><a href="project.html">Project MS</a></li>
+                                <li><a href="visio.html">Visio</a></li>
+                        </ul>
+                </li>
+                
+                <li> <a href="#">Software Adobe</a>
+                    <ul>
+                        <li> <a href="photoshop.html">Photoshop   </a> </li>
+                        <li> <a href="lightroom.html">Ligthroom </a> </li>
+                        <li> <a href="acrobat_pro.html">Acrobat Pro    </a> </li>
+                    </ul>
+                </li>
+                
+                <li> <a href="#">Sobre</a>
+                    <ul>
+                        <li> <a href="quemsomos.html">Quem Somos?   </a> </li>
+                    </ul>
+    
+                </li>
+                
+                <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portifolio.html">Portifolio</a></li>
+          <li><a href="forms_atvd.html">Formulario</a></li>
+    </ul>
+    </div>
+
+<center>
+
+    <br> <br> <br> <br> <br> <br>
+  
+
+     <form>
+<fieldset >
+    <legend>Dados Pessoais</legend>
+    <table align="left" width="75%" heigth="300px" border="0">
+        <tr>    <td width="20%">  <img src="../imagens/pessoa.png" align="center" width="200" height="150px"></img>
+                </td>
+
+                <td width="20%"> Nome: <br> <br> Data de nascimento: <br> <br> Gênero: <br> <br> Formação : <br> <br> CPF <br> <br>
+                </td>
+
+                <td width="35%"> <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" size="20" maxlength="100" required> <br> <br>
+
+                                <input type="date" name="nascimento"> <br> <br>
+                                <input type="radio" name="sexo" value="Masculino"> Masculino
+                                <input type="radio" name="sexo" value="Feminino"> Feminino <br> <br>
+
+            <select name="Formação">
+                    <option value="1° Ano do Ensino Fundamental"> 1° Ano do Ensino Fundamental </option>
+                    <option value="2° Ano do Ensino Fundamental"> 2° Ano do Ensino Fundamental </option>
+                    <option value="3° Ano do Ensino Fundamental"> 3° Ano do Ensino Fundamental </option>
+                    <option value="4° Ano do Ensino Fundamental"> 4° Ano do Ensino Fundamental </option>
+                    <option value="5° Ano do Ensino Fundamental"> 5° Ano do Ensino Fundamental </option>
+                    <option value="6° Ano do Ensino Fundamental"> 6° Ano do Ensino Fundamental </option>
+                    <option value="7° Ano do Ensino Fundamental"> 7° Ano do Ensino Fundamental </option>
+                    <option value="8° Ano do Ensino Fundamental"> 8° Ano do Ensino Fundamental </option>
+                    <option value="9° Ano do Ensino Fundamental"> 9° Ano do Ensino Fundamental </option>
+                    <option value="1° Ano do Ensino Médio"> 1° Ano do Ensino Médio </option>
+                    <option value="2° Ano do Ensino Médio"> 2° Ano do Ensino Médio </option>
+                    <option value="3° Ano do Ensino Médio"> 3° Ano do Ensino Médio </option>
+                    <option value="Ensino Médio Completo" selected="selected">  Ensino Médio Completo </option>
+                    </select> <br> <br>
+                
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF" size="15" maxlength="100" required> <br> <br>
+                </td>
+
+                <td width="5%"> Profissão:
+                </td>
+
+                 <td width="29%"> <select name="alimento">
+                    <option value="Afiliado de lojas virtuais"> Afiliado de lojas virtuais </option>
+                    <option value="Blogger"> Blogger. </option>
+                    <option value="Vendedor de marketplace"> Vendedor de marketplace </option>
+                    <option value="Influenciador digital"> Influenciador digital </option>
+                    <option value="Analista de redes sociais"> Analista de redes sociais </option>
+                    <option value="Desenvolvedor mobile"> Desenvolvedor mobile </option>
+                    <option value="Autor de e-Books"> Autor de e-Books </option>
+                    <option value="Consultor"> Consultor </option>
+                    <option value="Designer gráfico"> Designer gráfico </option>
+                    <option value="Professor de idiomas"> Professor de idiomas </option>
+                    <option value="Fotógrafo digital"> Fotógrafo digital </option>
+                    <option value="Desenvolvedor de Software"> Desenvolvedor de Software </option>
+                    <option value="Engenheiro de Dados"> Engenheiro de Dados </option>
+                    <option value="Especialista em Inteligência Artificial"> Especialista em Inteligência Artificial </option>
+                    <option value="Cientista de Dados"> Cientista de Dados </option>
+                    <option value="Analista de Segurança Cibernética"> Analista de Segurança Cibernética </option>
+                    <option value="Analista de Marketing Digital"> Analista de Marketing Digital </option>
+                    <option value="Gerente de Marketing Digital"> Gerente de Marketing Digital </option>
+                    <option value="Especialista em SEO"> Especialista em SEO </option>
+                    <option value="Especialista em Automação de Marketing"> Especialista em Automação de Marketing </option>
+                    <option value="Especialista em Experiência do Usuário"> Especialista em Experiência do Usuário </option>
+                    <option value="Especialista em Automação Industrial"> Especialista em Automação Industrial </option>
+                    <option value="Especialista em Cloud Computing"> Especialista em Cloud Computing </option>
+                    <option value="Especialista em E-commerce"> Especialista em E-commerce </option>
+                    <option value="Especialista em Mobile Marketing"> Especialista em Mobile Marketing </option>
+                    <option value="Especialista em CRM"> Especialista em CRM </option>
+                    <option value="Especialista em Chatbots"> Especialista em Chatbots </option>
+                    <option value="Especialista em Redes Sociais"> Especialista em Redes Sociais </option>
+                    <option value="Especialista em Gestão de Projetos Digitais"> Especialista em Gestão de Projetos Digitais </option>
+                    <option value="Especialista em Business Intelligence"> Especialista em Business Intelligence </option>
+                    <option value="Especialista em Marketing de Conteúdo"> Especialista em Marketing de Conteúdo </option>
+
+                    <option value="Nenhum" selected="selected" required> Nenhuma Profissão </option>
+                    </select> <br> 
+                </td>
+        </tr>
+                    
+    </table>
+</fieldset>    
+
+
+<br> <br> <br> <br>
+
+<fieldset>
+    <legend>Contato</legend>
+    <table align="left" width="75%" heigth="300px" border="0">
+        <tr>    <td width="20%">  <img src="../imagens/contato.png" align="center" width="200" height="200px"></img>
+                </td> 
+
+                <td width="5%"> Email: <br> <br> Telefone: <br> <br> Celular: <br> <br> Skype: <br> <br>
+                </td>
+
+
+                <td width="70%"><input type="text" name="nome" id="nome" placeholder="Digite o seu Nome" size="30" maxlength="100"> <br> <br>
+
+                                <input type="text" name="telefone" id="telefone" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+
+                                <input type="text" name="celular" id="celular" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+
+                                <input type="text" name="skype" id="skype" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+                </td> 
+        </tr>
+    </table>
+</fieldset>    
+
+
+<br> <br> <br> <br> 
+
+<fieldset>
+    <legend>Endereço</legend>
+    <table align="left" width="75%" heigth="300px" border="0">
+        <tr>    <td width="20%">  <img src="../imagens/endereco.png" align="center" width="200" height="200px"></img>
+                </td>
+
+                <td width="5%"> Logradouro: <br> <br> Numero: <br> <br> Bairro: <br> <br> Estado: <br> <br> Complemento: <br> <br>
+                </td>
+
+                <td width="40%"><input type="text" name="nome" id="nome" placeholder="Digite o seu Nome" size="30" maxlength="100"> <br> <br>
+
+                                <input type="text" name="telefone" id="telefone" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+                                <input type="text" name="celular" id="celular" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+
+            <select name="alimento">
+                    <option value="AC"> AC </option>
+                    <option value="AL"> AL </option>
+                    <option value="AP"> AP </option>
+                    <option value="AM"> AM </option>
+                    <option value="BA"> BA </option>
+                    <option value="CE"> CE </option>
+                    <option value="DF"> DF </option>
+                    <option value="ES"> ES </option>
+                    <option value="GO"> GO </option>
+                    <option value="MA"> MA </option>
+                    <option value="MT"> MT </option>
+                    <option value="MS"> MS </option>
+                    <option value="MG"> MG </option>
+                    <option value="PA"> PA </option>
+                    <option value="PB"> PB </option>
+                    <option value="PR"> PR </option>
+                    <option value="PE"> PE </option>
+                    <option value="PI"> PI </option>
+                    <option value="RJ"> RJ </option>
+                    <option value="RN"> RN </option>
+                    <option value="RS"> RS </option>
+                    <option value="RO"> RO </option>
+                    <option value="RR"> RR </option>
+                    <option value="SC"> SC </option>
+                    <option value="SP"> SP </option>
+                    <option value="SE"> SE </option>
+                    <option value="TO"> TO </option>
+                    <option value="UF" selected="selected"> UF </option>
+                    </select> <br> <br>
+                
+                    <input type="text" name="telefone" id="telefone" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+                </td>
+
+                <td width="5%"> Cep: <br> <br> Cidade: <br> <br> 
+                </td>
+
+                 <td width="29%">  <input type="text" name="celular" id="celular" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br>
+                    <input type="text" name="celular" id="celular" placeholder="Digite o seu Nome" size="15" maxlength="100"> <br> <br> 
+                </td>
+        </tr>
+                    
+    </table>
+</fieldset>
+
+
+    <br>
+    <table align="center" width="60%" heigth="150px" border="0">
+        <td> <input type="submit" name="Salvar Clientes" value="Salvar Clientes"> 
+        <input type="reset" name="Limpar Dados" value="Limpar Dados">
+        </td>
+    </table>
+
+
+    <br><br><br> <br><br>
+
+    </form>
+</center>  
+
+</body>
+</html>
